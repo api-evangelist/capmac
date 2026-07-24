@@ -1,22 +1,67 @@
 aid: capmac
-name: Capmac
-description: Capmac is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/capmac.png
+name: CapMAC Holdings
+description: CapMAC Holdings Inc. (Capital Markets Assurance Corporation) was a New York-based holding
+  company that provided financial guaranty and surety insurance for structured securities worldwide,
+  primarily asset-backed securities, alongside structured financial solutions, advisory and structuring
+  services, and investment management. Founded in 1973 and headquartered at 885 Third Avenue in New York
+  City, it was a Canaan Partners portfolio company. MBIA Inc. acquired CapMAC Holdings in a stock swap
+  valued at more than $500 million, completing the merger on February 17, 1998, after which CapMAC
+  operated as an indirect wholly-owned MBIA subsidiary. Capital Markets Assurance Corporation was
+  merged into MBIA Insurance Corporation during the third quarter of 2010 and ceased to exist as a
+  separately licensed insurer. The company is defunct and operates no website, developer program, or
+  API surface; the capmac.com domain is an unrelated parked domain listed for sale.
 url: https://raw.githubusercontent.com/api-evangelist/capmac/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-founded: '1973'
+x-headquarters: New York, New York, United States
+x-acquired-by: MBIA Inc.
+x-acquired-date: '1998-02-17'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Financial Services
+- Insurance
+- Financial Guaranty
+- Structured Finance
+- Asset-Backed Securities
+- Defunct
+- Acquired
 apis: []
+common:
+- type: CompanyProfile
+  url: https://www.canaan.com/companies/capmac-holdings
+- type: Acquirer
+  url: https://investor.mbia.com/investor-relations/corporate-profile/history/default.aspx
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  finding: Defunct entity, merged into MBIA Inc. 1998-02-17; CMAC dissolved into MBIA Insurance Corp
+    Q3 2010. No live domain, developer portal, or API surface. capmac.com is a parked for-sale domain
+    (HTTP 200, unrelated). No artifacts generated - no fabrication.
